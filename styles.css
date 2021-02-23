@@ -1,166 +1,156 @@
 @import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
 }
 :root {
-  --slantedText: "Grand Hotel", cursive;
-  --primaryColor: #698f3f;
-  --secondaryColor: #fca311;
-  --mainDark: #3a3e3b;
-  --mainWhite: #fff;
-  --mainGrey: #e5e5e5;
-  --mainTransition: all 0.3s ease-in-out;
-  --letterSpacing: 0.5rem;
+     --slantedText: "Grand Hotel", cursive;
+     --primaryColor: #698f3f;
+     --secondaryColor: #fca311;
+     --mainDark: #3a3e3b;
+     --mainWhite: #fff;
+     --mainGrey: #e5e5e5;
+     --mainTransition: all 0.3s ease-in-out;
+     --letterSpacing: 0.5rem;
 }
 body {
-  font-family: "Catamaran", sans-serif;
-  line-height: 1.5;
+     font-family: "Catamaran", sans-serif;
+     line-height: 1.5;
 }
-
 
 /* helper utility classses */
 
-a{
-  text-decoration: none;
+a {
+     text-decoration: none;
 }
-.text-white{
-  color: var(--mainWhite);
+.text-white {
+     color: var(--mainWhite);
 }
-.text-center{
-
-  text-align: center;
-
+.text-center {
+     text-align: center;
 }
-.text-primary{
-  color: var(--primaryColor);
+.text-primary {
+     color: var(--primaryColor);
 }
 /* navbar */
 /* header */
-.header{
-  min-height: 100vh;
-background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(./images/main-bcg.jpeg) center/cover no-repeat fixed;
-position: relative;
-
-
+.header {
+     min-height: 100vh;
+     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url(./images/main-bcg.jpeg) center/cover no-repeat fixed;
+     position: relative;
 }
-.banner{
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%,-50%);
+.banner {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     text-align: center;
+     transform: translate(-50%, -50%);
 }
 
-.banner-subtitle{
-
-font-size: 2.5rem;
-color: var(--primaryColor);
-font-family: var(--slantedText);
-letter-spacing: var(--letterSpacing);
-/* animation */
-animation:Slidefrmleft 5s ease-in-out 1;
-
+.banner-subtitle {
+     font-size: 2.5rem;
+     color: var(--primaryColor);
+     font-family: var(--slantedText);
+     letter-spacing: var(--letterSpacing);
+     /* animation */
+     animation: Slidefrmleft 5s ease-in-out 1;
 }
-.banner-title{
-
-  font-size: 3rem;
-  text-transform: uppercase;
-  color: var(--mainWhite);
-  letter-spacing: var(--letterSpacing);
-  margin-top: 20px;
-  /* animation */
-animation:SlidefrmRight 5s ease-in-out 1;
+.banner-title {
+     font-size: 3rem;
+     text-transform: uppercase;
+     color: var(--mainWhite);
+     letter-spacing: var(--letterSpacing);
+     margin-top: 20px;
+     /* animation */
+     animation: SlidefrmRight 5s ease-in-out 1;
 }
 
-.banner-btn,.main-btn{
-  display: inline-block;
+.banner-btn,
+.main-btn {
+     display: inline-block;
 
-background: var(--primaryColor);
-padding: 0.8rem 1.5rem;
-color: var(--mainDark);
-letter-spacing: var(--letterSpacing);
-text-transform: uppercase;
-outline: 0.2rem solid var(--primaryColor) ;
-outline-offset: 4px;
-cursor: pointer;
-transition: var(--mainTransition);
-
-
+     background: var(--primaryColor);
+     padding: 0.8rem 1.5rem;
+     color: var(--mainDark);
+     letter-spacing: var(--letterSpacing);
+     text-transform: uppercase;
+     outline: 0.2rem solid var(--primaryColor);
+     outline-offset: 4px;
+     cursor: pointer;
+     transition: var(--mainTransition);
 }
 
-.banner-btn:hover,.main-btn:hover{
-
-  color: var(--mainWhite);
-  opacity: 0.7;
-  
-
+.banner-btn:hover,
+.main-btn:hover {
+     color: var(--mainWhite);
+     opacity: 0.7;
 }
-.banner-btn{
+.banner-btn {
+     padding: 1.2rem 1.5rem;
+     margin-top: 15px;
 
-  padding: 1.2rem 1.5rem;
-  margin-top: 15px;
-
-
-
-/* animation */
-animation:Show 5s ease-in-out 1;
+     /* animation */
+     animation: Show 5s ease-in-out 1;
 }
 /* end header */
 
 /* animation */
 
-@keyframes Show{
-
-0%{
-transform: scale(2);
-opacity: 1;
-
+@keyframes Show {
+     0% {
+          transform: scale(2);
+          opacity: 1;
+     }
+     100% {
+          transform: scale(1);
+          opacity: 2;
+     }
 }
-100%{
-transform: scale(1);
-opacity: 2;
-
+@keyframes SlidefrmRight {
+     0% {
+          transform: translateX(1000px);
+     }
+     50% {
+          transform: translateX(-200px);
+     }
+     75% {
+          transform: translateX(50px);
+     }
+     100% {
+          transform: translateX(0);
+     }
 }
-
+@keyframes Slidefrmleft {
+     0% {
+          transform: translateX(-1000px);
+     }
+     50% {
+          transform: translateX(200px);
+     }
+     75% {
+          transform: translateX(-50px);
+     }
+     100% {
+          transform: translateX(0px);
+     }
 }
-@keyframes SlidefrmRight{
-
-  0%{
-
-  transform: translateX(1000px);
-  
-  }
-  50%{
-    transform: translateX(-200px);
- 
-  }
-  75%{
-    transform: translateX(50px);
-  }
-  100%{
-    transform: translateX(0);
-  }
-  
-  }
-  @keyframes Slidefrmleft{
-
-    0%{
-      transform: translateX(-1000px);
-  
-    }
-    50%{
-      transform: translateX(200px);
-    }
-    75%{
-      transform: translateX(-50px);
-    }
-    100%{
-      transform: translateX(0px);
-    }
-  }
 
 /* end animation */
+/* 
+contect divider */
+
+.content-divider {
+     height: 0.5rem;
+
+     background: linear-gradient(
+          to left,
+          var(--primaryColor),
+          var(--secondaryColor),
+          var(--primaryColor)
+     );
+}
+
+/* end content divider */
