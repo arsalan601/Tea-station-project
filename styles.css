@@ -22,6 +22,13 @@ body {
 
 /* helper utility classses */
 
+.about-section {
+     padding: 2rem 0;
+     width: 80%;
+     max-width: 1172px;
+     margin: 0 auto;
+}
+
 /* clear fix */
 
 .clearfix::after,
@@ -218,3 +225,49 @@ contect divider */
 }
 
 /* end skill */
+
+/* About */
+.about-img {
+     width: 100%;
+     display: block;
+     transition: var(--mainTransition);
+}
+
+.about-img-container:hover .about-img {
+     opacity: 0.4;
+     transform: scale(1.2);
+}
+
+.about-img-container {
+     border: 0.8rem solid var(--primaryColor);
+     overflow: hidden;
+}
+
+.section-two {
+     padding: 2rem 0;
+}
+
+.about-subtitle {
+     font-size: 2rem;
+     text-transform: capitalize;
+     font-family: var(--slantedText);
+     letter-spacing: var(--letterSpacing);
+     color: var(--primaryColor);
+}
+.about-title {
+     font-size: 2rem;
+     text-transform: uppercase;
+     letter-spacing: var(--letterSpacing);
+}
+.about-text {
+     margin: 1rem 0;
+}
+@media screen and (min-width: 992px) {
+     .section-one,
+     .section-two {
+          width: 50%;
+          float: left;
+          padding: 2rem;
+     }
+}
+/* end about us */
