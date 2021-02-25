@@ -22,8 +22,7 @@ body {
 
 /* helper utility classses */
 
-.about-section,
-.product-section {
+.about-section {
      padding: 2rem 0;
      width: 80%;
      max-width: 1172px;
@@ -273,3 +272,57 @@ contect divider */
      }
 }
 /* end about us */
+
+.products {
+     background-color: var(--mainDark);
+}
+.product-info {
+     padding: 3rem 0;
+}
+.product-text {
+     max-width: 26rem;
+     margin-bottom: 15px;
+}
+.product-img {
+     width: 100%;
+     display: block;
+     border-radius: 1rem;
+}
+.product {
+     padding: 2rem 0;
+}
+.product-title {
+     margin-top: 10px;
+     text-transform: uppercase;
+     letter-spacing: var(--letterSpacing);
+}
+.product-price {
+     color: var(--primaryColor);
+     font-family: var(--slantedText);
+}
+@media screen and (min-width: 768px) {
+     .product {
+          width: 50%;
+          float: left;
+          padding: 2rem 1rem;
+     }
+     .products-info {
+          padding: 2rem 1rem;
+     }
+}
+@media screen and (min-width: 996px) {
+     .product {
+          width: 33.3%;
+          float: left;
+     }
+}
+@media screen and (min-width: 1200px) {
+     .products-info {
+          width: 30%;
+          float: left;
+     }
+     .products-inventory {
+          width: 70%;
+          float: left;
+     }
+}
