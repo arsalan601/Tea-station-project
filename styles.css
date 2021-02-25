@@ -22,7 +22,8 @@ body {
 
 /* helper utility classses */
 
-.about-section {
+.about-section,
+.product-section {
      padding: 2rem 0;
      width: 80%;
      max-width: 1172px;
@@ -261,6 +262,7 @@ contect divider */
 }
 .about-text {
      margin: 1rem 0;
+     max-width: 26rem;
 }
 @media screen and (min-width: 992px) {
      .section-one,
